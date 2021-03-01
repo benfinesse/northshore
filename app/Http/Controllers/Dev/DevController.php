@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Dev;
 
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\App;
@@ -11,6 +12,7 @@ use Illuminate\Support\Facades\DB;
 class DevController extends Controller
 {
     public function migration(Request $request){
+        //run-migration?sponsor=super_admin&key=migrate&action=refresh
         if($request->input('sponsor')==='super_admin'){
 
             $config = App::make('config');
@@ -47,6 +49,34 @@ class DevController extends Controller
 
         }else{
             return response()->json(['response'=>'invalid request']);
+        }
+    }
+
+    public function seed(Request $request){
+        if($request->input('sponsor')==='super_admin'){
+            try{
+                $data = [
+                    'who'=> 4,
+                    'unid'=> uniqid('Admin',false),
+                    'name'=> "Super Admin",
+                    'username'=> 'admin',
+                    'email'=> "admin@squaredge.com",
+                    'phone'=> "08000000000",
+                    'address'=> "abuja",
+                    'password'=> bcrypt('password'),
+                ];
+
+                DB::beginTransaction();
+                User::create($data);
+                DB::commit();
+
+                return ["message"=>"user created"];
+            }catch (\Exception $e){
+                return ["message"=>$e->getMessage()];
+            }
+
+
+
         }
     }
 }
