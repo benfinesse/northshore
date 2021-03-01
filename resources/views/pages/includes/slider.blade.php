@@ -4,13 +4,15 @@
             @foreach($banners as $banner)
                 <div class="slide">
                     <div class="slide__img">
-                        <img src="" alt="" data-lazy="{{ $banner->logo1() }}" class="full-image animated" data-animation-in="zoomInImage"/>
+                        <img src="" alt="" data-lazy="{{ $banner->logo1() }}" class="full-image animated" style="width: 100%" data-animation-in="zoomInImage"/>
                     </div>
                     <div class="slide__content">
                         <div class="slide__content--headings">
                             <h2 class="animated" data-animation-in="fadeInUp">{{ $banner->title }}</h2>
                             <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.3">{{ $banner->detail1 }}</p>
-                            <a href="{{ $banner->target }}" class="btn btn-dark-transparent animated rounded-0 btn-lg" data-animation-in="fadeInUp" data-delay-in="0.6">{{ $banner->btn }}</a>
+                            @if(!empty($banner->btn))
+                                <a href="{{ $banner->target }}" class="btn btn-dark-transparent animated rounded-0 btn-lg" data-animation-in="fadeInUp" data-delay-in="0.6">{{ $banner->btn }}</a>
+                            @endif
                         </div>
                     </div>
                 </div>
