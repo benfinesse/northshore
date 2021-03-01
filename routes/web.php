@@ -75,6 +75,7 @@ Route::get('/newsletter', 'HomeController@newsLetter')->name('newsletter');
 
 Route::get('/partner_fix', 'PartnerController@partnerFix');
 Route::get('/run-migration', 'Dev\DevController@migration');
+Route::get('/run-seed', 'Dev\DevController@seed');
 
 
 
