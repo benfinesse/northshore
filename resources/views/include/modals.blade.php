@@ -1,0 +1,1 @@
+<div id="smodal" class="modal">Modal Test</div>
