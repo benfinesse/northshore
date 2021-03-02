@@ -177,7 +177,7 @@ class PartnerController extends Controller
 
                 //delete old image
                 if(!empty($partner->brand)){
-                    unlink(url($partner->brand));
+                    unlink($partner->brand);
                 }
 
                 $photo->storeAs($directory, $filename, 'public');
