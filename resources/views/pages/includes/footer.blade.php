@@ -13,11 +13,11 @@
                     <div class="col">
                         <div class="icon"><i class="fas fa-envelope"></i> <i class="fas fa-phone"></i></div>
                         <div class="text">
-                            <p><a href="mailto:support@shirtstore.com">Support@example.com</a></p>
+                            <p><a href="mailto:support@squaredge.com">support@squaredge.com</a></p>
                         </div>
                         <div class="icon"></div>
                         <div class="text">
-                            <p>(+234)09030001440</p>
+                            <p>(+234)09000000000</p>
 
                         </div>
                     </div>

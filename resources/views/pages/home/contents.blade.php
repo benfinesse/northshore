@@ -12,7 +12,9 @@
                                     <div class="square-aligner"></div>
                                     <div class="square-content">
                                         <div class="img-dp">
-                                            <img class="img-fitbw" src="{{ $product->getpic1() }}" alt="prod_img">
+                                            <a href="{{ route('view.product', $product->unid) }}">
+                                                <img class="img-fitbw" src="{{ $product->getpic1() }}" alt="prod_img">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -20,9 +22,10 @@
 
                             </div>
                             <div class="col-md-6">
-                                <h6 class="mt-4 text-center text-uppercase color-def">{{ $product->name }}</h6>
+                                <h6 class="mt-4 text-center text-uppercase color-def"><a
+                                            href="{{ route('view.product', $product->unid) }}">{{ $product->name }}</a></h6>
                                 <p class="text-justify pl-2 pr-2">
-                                    {{ $product->detail }}
+                                    {{ $product->shortInfo }}
                                 </p>
                             </div>
                         </div>

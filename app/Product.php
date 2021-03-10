@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Product extends Model
 {
@@ -49,7 +50,10 @@ class Product extends Model
         }else{
             return 'less %' .round((($this->oldprice - $this->price )/ $this->oldprice) * 100);
         }
+    }
 
+    public function getShortInfoAttribute(){
+        return Str::words($this->detail, 30, ' ...');
     }
 
 
