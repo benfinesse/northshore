@@ -25,12 +25,12 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      */
     public function index()
     {
         $banners = Content::where('type','banner')->where('group', 'home')->get();
-        $products = Product::where('active', true)->take(4)->get();
+        $products = Product::where('active', true)->inRandomOrder()->take(4)->get();
         $feature = Product::where('active', true)->where('featured', true)->first();
         return view('pages.home.home')
             ->with('banners', $banners)

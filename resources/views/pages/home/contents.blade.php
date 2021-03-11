@@ -36,7 +36,9 @@
         </div>
 
         @if($products->count()>3)
-            <a href="{{ route('view.categories') }}" class="btn btn-def1 btn-lg text-uppercase mt-5 shadow-lg">View more</a>
+            <div class="text-center mt-3 mb-5">
+                <a href="{{ route('view.categories') }}" class="btn btn-def1 btn-lg text-uppercase mt-5 shadow-lg">View more</a>
+            </div>
         @endif
 
     </div>
