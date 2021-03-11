@@ -486,7 +486,8 @@ class ProductController extends BasedController
         $partner = Partner::whereUnid($unid)->first();
         $partners = Partner::where('unid', '!=', $unid)->get();
         if(!empty($partner)){
-            $products = Product::where('partner_id', $partner->unid)->select(['name','unid'])->get();
+            $products = Product::where('partner_id', $partner->unid)->select(['name','unid','pic1'])->get();
+
             return view('pages.partner.products')
                 ->with([
                     'products'=> $products,

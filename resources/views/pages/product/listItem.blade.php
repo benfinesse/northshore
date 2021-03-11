@@ -9,8 +9,6 @@
                     <img class="hover" src="{{ $product->getpic1() }}" style="transition:1s;">
                 </a>
             @endif
-
-
         </div>
     </div>
 </div>
