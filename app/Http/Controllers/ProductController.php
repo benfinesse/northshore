@@ -480,4 +480,20 @@ class ProductController extends BasedController
             return back();
         }
     }
+
+
+    public function partners($unid){
+        $partner = Partner::whereUnid($unid)->first();
+        $partners = Partner::where('unid', '!=', $unid)->get();
+        if(!empty($partner)){
+            $products = Product::where('partner_id', $partner->unid)->select(['name','unid'])->get();
+            return view('pages.partner.products')
+                ->with([
+                    'products'=> $products,
+                    'partners'=>$partners,
+                    'partner'=>$partner,
+                ]);
+        }
+        return redirect()->route('view.categories')->withErrors(['Unable to complete request']);
+    }
 }

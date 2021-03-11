@@ -65,6 +65,7 @@ Route::get('/category/{unid}', 'HomeController@category')->name('view.category')
 Route::get('/products/{unid}', 'HomeController@productName')->name('view.product');
 Route::get('/about', 'HomeController@about')->name('about');
 Route::get('/partners', 'HomeController@partners')->name('partners');
+Route::get('/partner/{unid}/products', 'ProductController@partners')->name('partner.product');
 Route::get('/topartner/{unid}', 'HomeController@topartner')->name('topartner');
 Route::get('/resellers', 'HomeController@outlets')->name('resellers');
 Route::get('/manufacturers', 'HomeController@mfrs')->name('mfrs');

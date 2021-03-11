@@ -27,7 +27,7 @@ $navlink['partners'] = 'isActive';
                             <img src="{{ $partner->brand() }}" alt="logo" class="partner-img">
 
                             <hr>
-                            <a href="#" class="btn btn-sm btn-dark">View Products</a>
+                            <a href="{{ route('partner.product', $partner->unid) }}" class="btn btn-sm btn-dark">View Products</a>
                         </div>
                     </div>
                 </div>
