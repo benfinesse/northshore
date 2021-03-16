@@ -29,7 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $banners = Content::where('type','banner')->where('group', 'home')->get();
+        $banners = Content::inRandomOrder()->where('type','banner')->where('group', 'home')->get();
         $products = Product::where('active', true)->inRandomOrder()->take(4)->get();
         $feature = Product::where('active', true)->where('featured', true)->first();
         return view('pages.home.home')
