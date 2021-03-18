@@ -79,6 +79,12 @@ Route::get('/run-migration', 'Dev\DevController@migration');
 Route::get('/run-seed', 'Dev\DevController@seed');
 
 
+//version 2 routes
+Route::get('/v2/home', 'V2\HomeController@index')->name('v2.home');
+Route::get('v2/product', 'CategoryController@index')->name('products');
+
+
+
 
 
 

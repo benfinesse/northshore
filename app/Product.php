@@ -56,5 +56,9 @@ class Product extends Model
         return Str::words($this->detail, 30, ' ...');
     }
 
+    public function getBriefInfoAttribute(){
+        return Str::words($this->detail, 10, ' ...');
+    }
+
 
 }
