@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="what-experct-img rmb-50" style="background-image: url('{{ $randomProduct->getpic1() }}'); background-size: contain "></div>
+                    <div class="what-experct-img rmb-50" style="background-image: url('{{ $randomProduct->getpic1() }}'); background-size: contain;background-repeat: no-repeat;"></div>
                 </div>
                 <div class="col-lg-6">
                     <style>

@@ -6,7 +6,7 @@
             <div class="header-inner d-lg-flex align-items-center">
 
                 <div class="logo-outer d-flex align-items-center">
-                    <div class="logo"><a href="{{ route('home') }}"><img src="{{ url('icons/logo.png') }}" alt="" title=""></a></div>
+                    <div class="logo"><a href="{{ route('home') }}"><img src="{{ url('img/logo.png') }}" alt="" title=""></a></div>
                 </div>
 
                 <div class="nav-outer clearfix ml-lg-auto">

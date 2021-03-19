@@ -17,7 +17,7 @@
                     <p>We partner with the top-most manufacturers in the world to these products easily accessible to aesthetics physician, dermatologists, plastic surgeons. We also service Medical Spas, Beauty clinics and spas as well as pharmacy chains. </p>
                     <div class="vision-mision">
                         <div class="vm-image">
-                            <img src="{{ url('icons/a-logo.png') }}" alt="Icon" style="width: 100px">
+                            <img src="{{ url('img/a-logo.png') }}" alt="Icon" style="width: 100px">
                         </div>
                         <div class="vm-content">
                             <h4>Our Mission & Vission</h4>
