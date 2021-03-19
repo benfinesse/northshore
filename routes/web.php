@@ -20,7 +20,7 @@ Route::get('/tester', function (){
 
 });
 
-Route::get('/', 'HomeController@index')->name('home');
+//Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/cms-admin', 'AdminController@signingin')->name('cms.signin');
 
@@ -80,7 +80,7 @@ Route::get('/run-seed', 'Dev\DevController@seed');
 
 
 //version 2 routes
-Route::get('/v2/home', 'V2\HomeController@index')->name('v2.home');
+Route::get('/', 'V2\HomeController@index')->name('home');
 Route::get('v2/product', 'CategoryController@index')->name('products');
 
 
