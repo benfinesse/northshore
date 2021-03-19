@@ -12,7 +12,7 @@
                                 </p>
                                 <div class="about-widget-contact mt-25">
                                     <p>{{ 'info@squaredgeltd.com' }}</p>
-                                    <h4><a href="callto:+00568468349">+234 90 3000 1440</a></h4>
+                                    <h4><a href="callto:+2349030001440">+234 90 3000 1440</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -56,9 +56,9 @@
     </div>
 
     <div class="footer-dotted-top">
-        <img src="/assets/images/footer/footer-dot1.png" alt="Footer Dotted">
+        <img src="{{ url('assets/images/footer/footer-dot1.png') }}" alt="Footer Dotted">
     </div>
     <div class="footer-dotted-bottom">
-        <img src="/assets/images/footer/footer-dot2.png" alt="Footer Dotted">
+        <img src="{{ url('assets/images/footer/footer-dot2.png') }}" alt="Footer Dotted">
     </div>
 </footer>
