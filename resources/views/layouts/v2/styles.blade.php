@@ -24,6 +24,10 @@
         width: 100%;
         height:300px;
         overflow: hidden;
+        align-content: center;
+        display: grid;
+        text-align: -webkit-center;
+        padding: 10px;
     }
     .product-footer{
         background: #151C46;
