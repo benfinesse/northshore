@@ -44,6 +44,10 @@ class Product extends Model
         return !empty($this->pic3)?url($this->pic3):'';
     }
 
+    public function getImageAttribute(){
+        return !empty($this->pic1)?url($this->pic1):'';
+    }
+
     public function getdis(){
         if(empty($this->oldprice)){
             return null;

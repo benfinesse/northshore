@@ -16,8 +16,4 @@ $navlink['home'] = 'current';
     @include('pages.v2.home.prod_slide')
 
 
-    @include('include.v2.footer')
-
-
-
 @endsection

@@ -10,3 +10,32 @@
 <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+
+@yield('custom_css')
+
+<style>
+    .min-height{
+        min-height: 80vh;
+    }
+    .img-fit{
+        width: 100%;
+    }
+    .product-item-wrapper{
+        width: 100%;
+        height:300px;
+        overflow: hidden;
+    }
+    .product-footer{
+        background: #151C46;
+        color: #f1f1f1;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    .soft-shadow{
+        box-shadow: 0px 20px 20px #0000000f;
+    }
+
+    .banner-content .page-title, .banner-content p{
+        color: #fff
+    }
+</style>

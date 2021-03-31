@@ -188,14 +188,16 @@
         
         /* initialize the contact page map on the "map" div with a given center and zoom*/
         if($('#map').length !== 0){
-            var map = L.map('map', {
-                center: [-6.185033, 106.798862],
-                zoom: 18,
-                zoomControl: false,
-                scrollWheelZoom: true,
-            });
-
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
+            $('#map')
+                .append(`<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.8273825205656!2d7.474971114758281!3d9.079485090696217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0af9e90bfb43%3A0xfc506594891fce02!2sTillabery%2C%20Wuse%2C%20Abuja!5e0!3m2!1sen!2sng!4v1617187775122!5m2!1sen!2sng" style="border:0; width: 100%; min-height: 550px" allowfullscreen="" loading="lazy"></iframe>`);
+            // var map = L.map('map', {
+            //     center: [9.079091, 7.477125],
+            //     zoom: 18,
+            //     zoomControl: false,
+            //     scrollWheelZoom: true,
+            // });
+            //
+            // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
         }
 
 
@@ -275,6 +277,10 @@
         
         
     });
+
+    setTimeout(function () {
+        $('.preloader').remove();
+    }, 5000)
 
 
 

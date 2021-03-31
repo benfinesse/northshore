@@ -81,7 +81,12 @@ Route::get('/run-seed', 'Dev\DevController@seed');
 
 //version 2 routes
 Route::get('/', 'V2\HomeController@index')->name('home');
-Route::get('v2/product', 'CategoryController@index')->name('products');
+Route::get('v2/products', 'ProductController@products')->name('products');
+Route::get('v2/product/{unid}', 'V2\HomeController@showProduct')->name('show.product');
+Route::get('v2/category', 'V2\HomeController@category')->name('category');
+Route::get('v2/partners', 'V2\HomeController@partners')->name('partners.list');
+Route::get('v2/about', 'V2\HomeController@about')->name('about.us');
+Route::get('v2/contact', 'V2\HomeController@contact')->name('contact.us');
 
 
 

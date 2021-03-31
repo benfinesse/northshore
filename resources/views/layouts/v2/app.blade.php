@@ -35,6 +35,8 @@
             <div class="" style="margin-top: 55px"></div>
 
             @yield('content')
+
+            @include('include.v2.footer')
         </div>
 
         @include('layouts.v2.js')

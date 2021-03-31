@@ -25,10 +25,10 @@
                             <ul class="navigation clearfix">
                                 <li class="{{ @$navlink['home'] }}"><a href="{{ route('home') }}">Home</a></li>
                                 <li class="{{ @$navlink['products'] }}"><a href="{{ route('products') }}">Products</a></li>
-                                <li class="{{ @$navlink['partners'] }}"><a href="{{ route('partners') }}">Partners</a></li>
-                                <li class="{{ @$navlink['about'] }}"><a href="{{ route('about') }}">About</a></li>
-
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="{{ @$navlink['category'] }}"><a href="{{ route('category') }}">Categories</a></li>
+                                <li class="{{ @$navlink['partners'] }}"><a href="{{ route('partners.list') }}">Partners</a></li>
+                                <li class="{{ @$navlink['about'] }}"><a href="{{ route('about.us') }}">About</a></li>
+                                <li class="{{ @$navlink['contact'] }}"><a href="{{ route('contact.us') }}">Contact</a></li>
                             </ul>
                         </div>
 

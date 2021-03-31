@@ -585,7 +585,7 @@ a.theme-btn.style-three:before,
 /****************************************************** */
 .banner-section {
     position: relative;
-    background: url(../images/banner/banner.png);
+    background: url(../images/banner/banner.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -1424,7 +1424,7 @@ img.mfp-img {
 }
 
 .contact-map {
-    height: 820px;
+    min-height: 620px;
 }
 
 .leaflet-control-attribution.leaflet-control {

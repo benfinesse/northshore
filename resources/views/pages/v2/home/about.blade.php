@@ -24,7 +24,7 @@
                             <p>Our mission is to creatively market our value proposition and support practitioners to professionally diagnose and dispense treatment for clients’ skincare issues with the best products/devices in the industry.</p>
                         </div>
                     </div>
-                    <a href="#" class="theme-btn style-two">Explore More</a>
+                    <a href="{{ route('about.us') }}" class="theme-btn style-two">Explore More</a>
                 </div>
             </div>
         </div>

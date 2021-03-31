@@ -497,4 +497,11 @@ class ProductController extends BasedController
         }
         return redirect()->route('view.categories')->withErrors(['Unable to complete request']);
     }
+
+    public function products(){
+        $items = Product::where('active', true)->paginate(12);
+        return view('pages.v2.product.index')->with([
+            'items'=>$items
+        ]);
+    }
 }
