@@ -44,4 +44,10 @@
 
     </body>
 
+    <script>
+        setTimeout(function () {
+            $('.preloader').remove();
+        }, 11000)
+    </script>
+
 </html>

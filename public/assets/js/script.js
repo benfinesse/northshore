@@ -278,10 +278,6 @@
         
     });
 
-    setTimeout(function () {
-        $('.preloader').remove();
-    }, 5000)
-
 
 
 })(window.jQuery);
