@@ -37,7 +37,7 @@ $navlink['products'] = 'current';
         <div class="container">
             <div class="row">
                 <div class="wrapper-p col-md-5 col-12">
-                    <div class="card  card-clear outlined" style="max-height: 418px">
+                    <div class="card  card-clear outlined" style="max-height: 418px;align-content: center;display: grid;text-align: -webkit-center;min-height: 350px">
                         <img class="" src="{{ $product->getpic1() }}" alt="{{ $product->name }}">
                     </div>
                     <div class="row">
