@@ -22,7 +22,7 @@
     }
     .product-item-wrapper{
         width: 100%;
-        height:300px;
+        height:320px;
         overflow: hidden;
         align-content: center;
         display: grid;
