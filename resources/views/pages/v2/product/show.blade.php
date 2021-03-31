@@ -5,6 +5,11 @@ $navlink['products'] = 'current';
 
 @section('custom_css')
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <style>
+        footer{
+            color: #777 !important;
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -32,8 +37,8 @@ $navlink['products'] = 'current';
         <div class="container">
             <div class="row">
                 <div class="wrapper-p col-md-5 col-12">
-                    <div class="card  card-clear outlined">
-                        <img class="card-img-top img-fitbw targetImg" src="{{ $product->getpic1() }}" alt="Card image cap">
+                    <div class="card  card-clear outlined" style="max-height: 418px">
+                        <img class="card-img-top " src="{{ $product->getpic1() }}" alt="Card image cap">
                     </div>
                     <div class="row">
                         @if(is_file($product->pic1))
