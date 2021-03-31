@@ -1,4 +1,4 @@
-<section class="banner-section" style="background: url('{{ $banner->logo1() }}');">
+<section class="banner-section" style="background: url('{{ $banner->logo1() }}'); background-size: cover; background-position: center;">
     <div class="">
         <div class="banner-inner">
             @if(!empty($banner->title))
