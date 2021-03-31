@@ -33,7 +33,7 @@ $navlink['category'] = 'current';
                     <div class="col-sm-12 col-md-4 mb-4">
                         <div class="card soft-shadow">
                             <div class="card-body">
-                                <a href="{{ route('view.category', $category->unid) }}">
+                                <a href="{{ route('products', ['cid'=>$category->unid]) }}">
                                     <strong class="text-uppercase">{{ $category->name }}</strong>
                                 </a>
                                 <hr>

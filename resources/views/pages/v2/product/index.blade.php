@@ -29,7 +29,7 @@ $navlink['products'] = 'current';
     <div class="min-height" style="margin-top: 170px">
         <div class="container">
             <div class="row">
-                @foreach($items as $product)
+                @forelse($items as $product)
                     <div class="col-sm-12 col-md-3 mb-4">
                         <div class="product-item-wrapper">
                             <a href="{{ route('show.product', $product->unid) }}">
@@ -41,7 +41,15 @@ $navlink['products'] = 'current';
                         </div>
 
                     </div>
-                @endforeach
+                @empty
+                    <div class="col-12">
+                        <h4 class="text-center">Oops, Products not Found</h4>
+                        <p class="text-center">Kindly Retry...</p>
+                        <div class="text-center">
+                            <a href="{{ route('products') }}" class="theme-btn">Products</a>
+                        </div>
+                    </div>
+                @endforelse
             </div>
         </div>
     </div>

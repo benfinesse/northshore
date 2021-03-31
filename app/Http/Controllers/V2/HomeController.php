@@ -48,7 +48,19 @@ class HomeController extends Controller
     }
 
     public function products(Request $request){
-        $items = Product::where('active', true)->paginate(12);
+        $query = Product::query();
+
+        $c_id = $request->input('cid');
+        $p_id = $request->input('pid');
+        if(!empty($c_id)){
+            $items = $query->where('category_id', $c_id)->where('active', true)->paginate(12);
+        }elseif(!empty($p_id)){
+            $items = $query->where('partner_id', $p_id)->where('active', true)->paginate(12);
+        }else{
+            $items = $query->paginate(12);
+        }
+
+
         return view('pages.v2.product.index')->with([
             'items'=>$items
         ]);

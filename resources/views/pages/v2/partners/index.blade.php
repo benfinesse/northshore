@@ -46,7 +46,7 @@ $navlink['partners'] = 'current';
                                 </p>
                                 <img src="{{ $partner->brand() }}" alt="logo" class="partner-img" style="max-height: 30px">
                                 <hr>
-                                <a href="{{ route('partner.product', $partner->unid) }}" class="theme-btn style-two">View Products</a>
+                                <a href="{{ route('products', ['pid'=>$partner->unid]) }}" class="theme-btn style-two">View Products</a>
                             </div>
                         </div>
                     </div>
