@@ -6,7 +6,7 @@ $navlink['products'] = 'current';
 @section('custom_css')
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <style>
-        footer{
+        footer, footer a{
             color: #777 !important;
         }
     </style>
