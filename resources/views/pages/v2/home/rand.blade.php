@@ -14,7 +14,7 @@
                     <div class="what-experct-content">
                         <h3>{{ $randomProduct->name }}</h3>
                         <p>{{ $randomProduct->shortInfo }}</p>
-                        <a href="#" class="theme-btn style-three tthover">Show More</a>
+                        <a href="{{ route('show.product', $randomProduct->unid) }}" class="theme-btn style-three tthover">Show More</a>
                     </div>
                 </div>
             </div>

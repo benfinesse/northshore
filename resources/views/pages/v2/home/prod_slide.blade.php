@@ -7,8 +7,8 @@
         <div class="team-carousel owl-carousel style-two">
             @foreach($products as $product)
                 <div class="team-item">
-                    <img src="{{ $product->getpic1() }}" alt="Team Member" style="cursor: pointer;" onclick="window.location='{{ route('view.product', $product->unid) }}'">
-                    <h5><a href="{{ route('view.product', $product->unid) }}">{{ $product->name }}</a></h5>
+                    <img src="{{ $product->getpic1() }}" alt="Team Member" style="cursor: pointer;" onclick="window.location='{{ route('show.product', $product->unid) }}'">
+                    <h5><a href="{{ route('show.product', $product->unid) }}">{{ $product->name }}</a></h5>
                     <p>{{ $product->briefInfo }}</p>
                 </div>
             @endforeach
