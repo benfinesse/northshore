@@ -30,7 +30,7 @@ $navlink['products'] = 'current';
         <div class="container">
             <div class="row">
                 @foreach($items as $product)
-                    <div class="col-sm-12 col-md-3">
+                    <div class="col-sm-12 col-md-3 mb-4">
                         <div class="product-item-wrapper">
                             <a href="{{ route('show.product', $product->unid) }}">
                                 <img src="{{ $product->image }}" alt="" >

@@ -499,7 +499,7 @@ class ProductController extends BasedController
     }
 
     public function products(){
-        $items = Product::where('active', true)->paginate(12);
+        $items = Product::where('active', true)->orderBy('id','desc')->paginate(12);
         return view('pages.v2.product.index')->with([
             'items'=>$items
         ]);

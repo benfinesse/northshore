@@ -55,7 +55,7 @@ $navlink['products'] = 'current';
                         @endif
 
                         @if(is_file($product->pic2))
-                            <div class="col-sm-3 col-4">
+                            <div class="col-sm-3 col-4  mt-4">
                                 <div class="square-container outlined">
                                     <div class="square-aligner"></div>
                                     <div class="square-content hide-overflow">
@@ -68,7 +68,7 @@ $navlink['products'] = 'current';
                         @endif
 
                         @if(is_file($product->pic3))
-                            <div class="col-sm-3 col-4">
+                            <div class="col-sm-3 col-4  mt-4">
                                 <div class="square-container outlined">
                                     <div class="square-aligner"></div>
                                     <div class="square-content hide-overflow">

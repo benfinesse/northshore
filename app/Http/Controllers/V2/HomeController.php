@@ -47,6 +47,13 @@ class HomeController extends Controller
         return view('pages.v2.contact.index');
     }
 
+    public function products(Request $request){
+        $items = Product::where('active', true)->paginate(12);
+        return view('pages.v2.product.index')->with([
+            'items'=>$items
+        ]);
+    }
+
     public function showProduct($unid){
         $product = Product::where('unid', $unid)->first();
         if(!empty($product)){
