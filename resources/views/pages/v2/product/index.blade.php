@@ -33,7 +33,7 @@ $navlink['products'] = 'current';
                     <div class="col-sm-12 col-md-3">
                         <div class="product-item-wrapper">
                             <a href="{{ route('show.product', $product->unid) }}">
-                                <img src="{{ $product->image }}" alt="" class="img-fit">
+                                <img src="{{ $product->image }}" alt="" >
                             </a>
                         </div>
                         <div class="product-footer text-center" onclick="window.location='{{ route('show.product', $product->unid) }}'">
