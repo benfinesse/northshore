@@ -38,7 +38,7 @@ $navlink['products'] = 'current';
             <div class="row">
                 <div class="wrapper-p col-md-5 col-12">
                     <div class="card  card-clear outlined" style="max-height: 418px">
-                        <img class="card-img-top " src="{{ $product->getpic1() }}" alt="Card image cap">
+                        <img class="" src="{{ $product->getpic1() }}" alt="{{ $product->name }}">
                     </div>
                     <div class="row">
                         @if(is_file($product->pic1))
