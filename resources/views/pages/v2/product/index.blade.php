@@ -53,7 +53,7 @@ $navlink['products'] = 'current';
             </div>
         </div>
         <div class="container">
-            <div class="p5">
+            <div class="pt-5">
                 {{ $items->links() }}
             </div>
         </div>
