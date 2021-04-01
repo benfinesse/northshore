@@ -30,7 +30,7 @@ $navlink['partners'] = 'current';
         <div class="container">
             <div class="row">
                 @foreach($items as $partner)
-                    <div class="col-sm-12 col-md-4 mb-4">
+                    <div class="col-sm-12 col-md-4 mb-4 mt-3">
                         <div class="card soft-shadow">
                             <div class="card-body">
                                 <a href="{{ $partner->website }}" target="_blank">
