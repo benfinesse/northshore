@@ -28,7 +28,7 @@ class Partner extends Model
 
     public function details(){
         $words = strip_tags($this->details);
-        return Str::words(ucfirst(strtolower($words)), 21) ;
+        return Str::words(ucfirst(strtolower($words)), 12) ;
 //        return $this->details;
     }
 
