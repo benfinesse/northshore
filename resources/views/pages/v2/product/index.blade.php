@@ -27,7 +27,7 @@ $navlink['products'] = 'current';
     </section>
 
     <div class="min-height" style="margin-top: 170px">
-        <div class="container">
+        <div class="container mb-5">
             <div class="row">
                 @forelse($items as $product)
                     <div class="col-sm-12 col-md-4 mb-5">
@@ -50,6 +50,11 @@ $navlink['products'] = 'current';
                         </div>
                     </div>
                 @endforelse
+            </div>
+        </div>
+        <div class="container">
+            <div class="p5">
+                {{ $items->links() }}
             </div>
         </div>
     </div>
